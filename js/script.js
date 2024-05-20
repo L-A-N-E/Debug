@@ -1,7 +1,7 @@
 
 //MENU HAMBURGUER
 //DECLARANDO A VARIAVEL E PEGANDO O  ID
-const btnMobile = document.querySelector("#btnMobile");
+const btnMobile = document.querySelector("#btnmobile");
 //FUNÇÃO MENU
 function Menu(){
     //DECLARANDO A VARIAVEL E PEGANDO O  ID
@@ -10,13 +10,13 @@ function Menu(){
     navBar.classList.toggle("active");
 }
 //EVENTO QUE AO CLICAR CHAMA FUNÇÃO MENU
-btnMobile.addEventListener("clique", Menu);
+btnMobile.addEventListener("click", Menu);
 
 
 /*criando o slideShow */
 
 //declarando o objeto de imagens em um array
-let imagenns = ['img/Carro1.png', 'img/Carro2.png', 'img/Carro3.png'];
+let imagens = ['./img/Carro1.png', './img/Carro2.png', './img/Carro3.png'];
 //declarando a posição de inicio
 let Index = 0;
 //declarando o tempo que as imagens vão passar em milesegundos
@@ -32,14 +32,14 @@ function slideShow() {
 
   //se a posição da imagem for imagem e a quantidade de imagens no array
 
-  if (Index == imagens.lenght) {
+  if (Index == imagens.length) {
     Index = 0;
   }
   //setTimeout é uma função que executa o tempo, nesse caso vai chamar função e aplicar o time
-  setTimeout('slideshow()', time);
+  setTimeout("slideShow()", time);
 }
 //executar toda a função
-slideshow();
+slideShow();
 
 
 
