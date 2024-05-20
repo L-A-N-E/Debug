@@ -10,7 +10,7 @@ document.addEventListener('click', function (event) {
         home.classList.remove("show");
     }
 });
-  
+
 const container = document.querySelector(".container");
 const sign_in_btn = document.querySelector("#sign-in-btn");
 const sign_up_btn = document.querySelector("#sign-up-btn");
